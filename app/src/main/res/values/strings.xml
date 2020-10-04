@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Audio Recorder</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="press_the_mic_button_n_to_start_recording">Press the mic button \n to start recording.</string>
+    <string name="record_button_press_this_button_to_start_recording_or_stop_recording">Record Button Press this button to start recording or stop recording</string>
+    <string name="click_this_button_to_open_list_of_recordings">Click this button to open list of recordings</string>
+</resources>

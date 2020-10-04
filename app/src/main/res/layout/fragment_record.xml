@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecordFragment">
+
+    <ImageView
+        android:id="@+id/record_header_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/home_illustration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/record_file_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:lineHeight="32dp"
+        android:text="@string/press_the_mic_button_n_to_start_recording"
+        android:textAlignment="center"
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/record_header_image"
+        tools:targetApi="p" />
+
+    <Chronometer
+        android:id="@+id/record_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/open_sans_light"
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="64sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/record_file_name" />
+
+    <ImageButton
+        android:id="@+id/record_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/record_button_press_this_button_to_start_recording_or_stop_recording"
+        android:src="@drawable/record_btn_stopped"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/record_timer" />
+
+    <ImageButton
+        app:layout_constraintTop_toTopOf="@+id/record_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/record_btn"
+        app:layout_constraintStart_toEndOf="@id/record_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"
+        android:src="@drawable/recorder_list_btn"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/click_this_button_to_open_list_of_recordings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
